@@ -1,0 +1,192 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body {
+    height: 100%;
+
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+:root {
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-family: "Kantumruy Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+p {
+    margin: var(--spacing-4);
+    text-align: left;
+    padding-left: var(--spacing-1);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+.navi-items {
+    display: flex;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Kantumruy Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.navi-item {
+    margin: 8px;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    
+} 
+
+section {
+    padding: var(--spacing-3) 0;
+}
+
+section h2{
+    padding: var(--spacing-4);
+}
+
+
+#about-me-section {
+    padding: 1.5rem 0px;
+}
+
+.about-me-items {
+    display: flex;
+    justify-content: center;
+}
+.about-me {
+    align-items: center;
+    margin: 20px 60px;
+    
+}
+
+#name {
+    margin: 0%;
+}
+
+#portrait-container img {
+    max-width: 100%;
+}
+
+#about-me-section button {
+    padding: 10px 30px;
+    font-size: 16px;
+
+}
+
+.projects {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.project-items{
+    width: 300px;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+#coming-soon-1 {
+    background: url(/resources/Images/coming-soon.jpeg) center center / cover;
+}
+#coming-soon-2 {
+    background: url(/resources/Images/coming-soon.jpeg) center center / cover;
+}
+#coming-soon-3 {
+    background: url(/resources/Images/coming-soon.jpeg) center center / cover;
+}#coming-soon-4 {
+    background: url(/resources/Images/coming-soon.jpeg) center center / cover;
+}
+.skill-container {
+    max-width: 100%;
+    
+}
+.skill-items {
+    margin: 1.5rem;
+    display: flex;
+    width: 90%;
+    height: auto;
+}
+
+.skill-items img{
+    margin-right: var(--spacing-1);
+}
+
+
+.bar-flex {
+    display: flex;
+    background-color: #eee;
+    position: relative;
+    width: 90%;
+}
+
+.bar-fill {
+    background-color: blueviolet;
+    transition: 0.3s;
+}
+
+.bar-tag {
+    background-color: blue;
+    color: white;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    height: 50px;
+}
+
+.bar-fill:hover {
+    background-color: red;
+}
+
+@media only screen and (max-width:750px) {
+    .about-me-items {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
